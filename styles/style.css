@@ -1,0 +1,46 @@
+/* FLEX BOX */
+/* Container */
+#container{
+    height: 480px;
+    min-width: 222px;
+    padding: 50px;
+    background-color:rgb(170, 125, 212);
+    text-align: center;
+    border: 1px solid blue;
+    margin: 50px 400px;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+/* kids from Container */
+#container > * {
+    padding: 30px;
+    flex: 1 100%;
+}
+
+/* Mobile-first approach
+    1. header
+    2. main
+    3. aside
+*/
+
+/* Medium screens */
+@media all and (nin-width: 600px) {
+    .aside {flex: 1 auto;
+    }
+}
+
+/* Large screens */
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars
+   credit: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+   */
+   .content{
+    flex: 4 0px;
+    order: 1;
+   }
+   .aside{
+    order: 2;
+    background-color: tomato;
+   }
