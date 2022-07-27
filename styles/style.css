@@ -4,7 +4,7 @@ h1{
 }
 /* Container */
 #container{
-    height: 48rem;
+    height: 33rem;
     min-width: 22rem;
     padding: 50px;
     background-color:rgb(170, 125, 212);
@@ -48,7 +48,7 @@ button{
     3. aside
 */
 #screen{
-    min-height: 3.1rem;
+    min-height: 4rem;
     min-width: 16rem;
 }
 .operation, .number{
