@@ -1,80 +1,66 @@
 /* FLEX BOX */
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color:rgb(170, 125, 212);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url();
+}
 h1{
     text-align: center;
 }
-/* Container */
+
 #container{
-    height: 33rem;
-    min-width: 22rem;
-    padding: 50px;
     background-color:rgb(170, 125, 212);
-    text-align: center;
-    border: 1px solid blue;
-    margin: 50px 400px;
     display: flex;
-    flex-flow: column wrap;
-
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
 }
 
-/* kids from Container */
-#container > * {
-    padding: 30px;
-    
-}
-
-/* Article */
-.article{
-    justify-content: center;
+.screen{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    background-color:rgba(211, 241, 255, 0.804);
+    width: 100%;
+    min-height: 3.9rem;
+    padding-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
-/* kids from Article */
-.aside{
-   
-   justify-content: center;
-   display: flex;
+
+.content {
+    display: flex;
+    flex-direction: column;
 }
+
 button{
     border-radius: 10px;
-    margin: 2px;
+    min-width: 3.9rem;
+    min-height: 3.9rem;
+    margin-bottom: 10px;
+    font-weight: bolder;
 }
-#equal{
-    text-align: center;
-}
+
 
 /* Mobile-first approach
     1. header
     2. main
     3. aside
 */
-#screen{
-    min-height: 4rem;
-    min-width: 16rem;
-}
-.operation, .number{
+
+/* .operation, .number{
     min-height: 2.7rem;
     min-width: 2.7rem;
     padding: 10px;
-}
-
-
-/* Medium screens */
-@media all and (min-width: 600px) {
-    .equal {
-        background-color: red;
-    }
-}
+} */
 
 /* Large screens */
   /* We invert order of first sidebar and main
    * And tell the main element to take twice as much width as the other two sidebars
    credit: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
    */
-   .content{
-    flex: 4 0px;
-    order: 1;
-   }
-   .aside{
-    order: 2;
-   
-   }
