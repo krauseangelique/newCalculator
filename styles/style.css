@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     background-image: url(../ressources/images/geek_desk.jpg);
     background-repeat: no-repeat;
+    background-size: auto;
 }
 h1{
     text-align: center;
