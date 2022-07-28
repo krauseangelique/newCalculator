@@ -19,9 +19,12 @@ buttons.map(button => {
                     screen.innerText = eval(screen.innerText);
                 } catch {
                     screen.innerText = "Error";
+                    // en developpement mettre le parametre error 
+                    console.log('error');
                 }
                 break;
             case '←':
+                // slice enlève le dernier caractère
                 if (screen.innerText) {screen.innerText = screen.innerText.slice(0, -1);
                 }
                 break;
