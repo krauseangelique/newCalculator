@@ -22,7 +22,10 @@ h1{
     width: max-content;
     margin-bottom: 10px;
     padding: 10px;
-    border: 10px solid gray;
+    border-left: 10px solid gray;
+    border-top: 10px solid gray;
+    border-right: 10px solid rgb(110, 110, 110);
+    border-bottom: 10px solid rgb(110,110,110);
     border-radius: 10px;
     
 }
