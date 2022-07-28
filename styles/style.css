@@ -54,6 +54,7 @@ button{
     min-height: 3.9rem;
     margin-bottom: 10px;
     font-weight: bolder;
+    box-shadow: 5px 2px 3px grey;
 }
 
 footer{
