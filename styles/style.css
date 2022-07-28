@@ -7,20 +7,24 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url(../ressources/images/geek_desk.jpg);
-    background-repeat: no-repeat;
-    background-size: auto;
+    opacity: 0.6;
+  
+    
 }
 h1{
     text-align: center;
 }
 
 #container{
-    background-color:rgb(170, 125, 212);
+    background-color:rgb(197, 160, 231);
     display: flex;
     flex-direction: column;
     align-items: center;
     width: max-content;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 10px solid gray;
+    
 }
 
 .screen{
@@ -32,8 +36,9 @@ h1{
     min-height: 3.9rem;
     padding-right: 10px;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
     font-size: 22px;
+    font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(115, 63, 164);
 }
@@ -41,7 +46,7 @@ h1{
 .content {
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(170, 125, 212);
+   /* margin-bottom: 10px; */
 }
 
 button{
