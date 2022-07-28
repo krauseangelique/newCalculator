@@ -25,7 +25,7 @@ buttons.map(button => {
                 break;
             case '←':
                 // slice enlève le dernier caractère
-                if (screen.innerText) {screen.innerText = screen.innerText.slice(0, -1);
+                if (screen.innerText) {screen.innerText =       screen.innerText.slice(0, -1);
                 }
                 break;
            default:
